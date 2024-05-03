@@ -1,0 +1,79 @@
+{
+  "overall-status": "yellow",
+  "sensors": [
+    {
+      "model":  "smoke-and-temp",
+      "id": 1,
+      "status": "green",
+      "location": "living-room",
+      "data": [
+        {
+          "temperature": 22.5,
+          "units": "Celcius",
+          "status": "green"
+        },
+        {
+          "smoke": false,
+          "status": "green"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "model": "smoke-and-temp",
+      "status": "yellow",
+      "location": "kitchen",
+      "data": [
+        {
+          "temperature": 12.5,
+          "units": "Celcius",
+          "status": "yellow"
+        },
+        {
+          "smoke": false,
+          "status": "green"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "model": "entryway",
+      "status": "red",
+      "location": "garage",
+      "data": [
+        {
+          "temperature": -2.5,
+          "units": "Celcius",
+          "status": "red"
+        },
+        {
+          "smoke": false,
+          "status": "green"
+        },
+        {
+          "entry": "open",
+          "status": "yellow"
+        },
+        {
+          "motion": true,
+          "status": "red"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "model": "perimeter",
+      "status": "red",
+      "location": "outer",
+      "open": [
+        "kitchen-window",
+        "garage-door"
+      ],
+      "closed": [
+        "living-room-window",
+        "kitchen-window",
+        "front-door"
+      ]
+    }
+  ]
+}
